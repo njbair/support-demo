@@ -1,0 +1,12 @@
+{
+  "type": "json",
+  "items": [
+    {{- range $index, $element := .Pages }}
+    {{- if ne $index 0 }},{{ end }}
+    {
+      "title": "{{ $element.Title }}",
+      "date": "{{ $element.Date }}"
+    }
+    {{- end }}
+  ]
+}
