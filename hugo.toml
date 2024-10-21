@@ -2,7 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "demo"
+
 [outputFormats.calendar]
-baseName = 'calendar'
-isPlainText = true
-mediaType = 'application/json'
+  baseName = 'calendar'
+  isPlainText = true
+  mediaType = 'application/json'

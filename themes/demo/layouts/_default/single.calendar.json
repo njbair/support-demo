@@ -1,0 +1,14 @@
+{{- $posts := where ( where ( where site.Pages "Section" "demo-a" ) "Kind" "page" ) "Date.Year" .Params.year
+-}}
+{
+  "type": "calendar",
+  "items": [
+    {{- range $index, $element := $posts }}
+    {{- if ne $index 0 }},{{ end }}
+    {
+      "title": "{{ $element.Title }}",
+      "date": "{{ $element.Date }}"
+    }
+    {{- end }}
+  ]
+}

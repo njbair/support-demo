@@ -5,7 +5,7 @@ draft = false
 outputs = ["json"]
 
 [cascade]
-outputs = ["html", "calendar"]
+  outputs = ["html", "calendar"]
 +++
 
 This section represents my second approach. In this section, there are no
